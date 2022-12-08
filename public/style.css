@@ -114,7 +114,8 @@ body {
 .post-content #title {
 	font-size: 2rem;
 	font-weight: 700;
-	line-height: 1.5;
+	line-height: 1;
+	letter-spacing: -2px;
 }
 
 .post-content #date {

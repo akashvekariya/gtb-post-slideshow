@@ -38,7 +38,8 @@ function gtbps_register_public_assets() {
 	wp_enqueue_script(
 		'gtb-post-slideshow-public-script',
 		plugin_dir_url(__FILE__) . $block_path,
-		['wp-blocks', 'wp-editor'],
+		[],
+		true,
 		true
 	);
 
