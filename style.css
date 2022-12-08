@@ -133,6 +133,43 @@ body {
 	overflow: hidden;
 }
 
+.inputWrapper .apiUrlInput {
+	padding: .5rem;
+	border-radius: .3rem;
+	border: 1px solid #6c757d;
+	flex: 1;
+	margin-right: .5rem;
+	background-color: #f8f9fa;
+}
+
+.inputWrapper #fetchData {
+	padding: .5rem;
+	border-radius: .3rem;
+	border: 1px solid #343a40;
+	background-color: #495057;
+	color: #f8f9fa;
+	cursor: pointer;
+}
+
+.inputWrapper {
+	width: calc(100vw - 2rem);
+	max-width: 920px;
+	margin: 0 auto;
+	display: flex;
+	align-items: center;
+	justify-self: start;
+	position: relative;
+	overflow: hidden;
+}
+
+.gtbps.container-wrapper {
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	justify-content: center;
+	padding: 2rem 0;
+}
+
 .post-content #author {
 	font-family: 'Inter';
 	font-weight: 300;
