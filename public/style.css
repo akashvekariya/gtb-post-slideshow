@@ -4,9 +4,8 @@
 	margin: 0;
 	padding: 0;
 	box-sizing: border-box;
-	font-family: Merriweather, serif;
-	color: #212529;
-	font-weight: 300;
+	font-family: inherit;
+	color: inherit;
 }
 
 body {
@@ -122,13 +121,14 @@ body {
 	font-family: 'Inter';
 	font-weight: 300;
 	margin-bottom: 1rem;
-	color: #6c757d;
+	/* color: #6c757d; */
 	font-size: 0.8rem;
 }
 
 .post-content #content {
-	font-size: 1rem;
+	/* font-size: 1rem; */
 	font-style: italic;
+	text-transform: none;
 	margin-top: 1rem;
 	max-height: 40%;
 	overflow: hidden;
@@ -177,7 +177,7 @@ body {
 	font-weight: 300;
 	margin-top: .3rem;
 	font-size: 0.8rem;
-	color: #6c757d;
+	/* color: #6c757d; */
 }
 
 .post-content #read-more {
