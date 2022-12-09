@@ -17,3 +17,5 @@ Later there is an input field, using which you can load data from your desire fi
 - Add it to your desired position in page and bammm!! It's done.
 
 ### Preview
+
+![image](https://user-images.githubusercontent.com/59219441/206766439-9755f893-888a-46db-8cac-cab718d7f2ba.png)
