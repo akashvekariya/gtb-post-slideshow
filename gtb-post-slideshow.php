@@ -10,7 +10,7 @@
 
 function gtbps_register_block_assets() {
 
-	$block_path = 'slideshow.js';
+	$block_path = 'admin/slideshow.js';
 
 	wp_enqueue_script(
 		'gtb-post-slideshow-block',
@@ -19,16 +19,17 @@ function gtbps_register_block_assets() {
 		true
 	);
 
-	// $style_path = 'slideshow.css';
+	$style_path = 'admin/slideshow.css';
 
-	// wp_enqueue_style(
-	// 	'gtb-post-slideshow-style',
-	// 	plugin_dir_url(__FILE__) . $style_path,
-	// 	[],
-	// 	true
-	// );
+	wp_enqueue_style(
+		'gtb-post-slideshow-style',
+		plugin_dir_url(__FILE__) . $style_path,
+		[],
+		true
+	);
 }
 
+// Hook the admin scripts for the block editor 
 add_action('enqueue_block_editor_assets', 'gtbps_register_block_assets');
 
 function gtbps_register_public_assets() {
@@ -43,6 +44,8 @@ function gtbps_register_public_assets() {
 		true
 	);
 
+	admin_url();
+
 	$style_path = 'public/style.css';
 
 	wp_enqueue_style(
@@ -53,4 +56,5 @@ function gtbps_register_public_assets() {
 	);
 }
 
+// Hook the client/public scripts for the block editor 
 add_action('enqueue_block_assets', 'gtbps_register_public_assets');
