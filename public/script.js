@@ -39,7 +39,7 @@ document.addEventListener('DOMContentLoaded', function () {
 
 					for (let i = 0; i < data.length; i++) {
 
-						var bg_title = truncateStr(data[i].title.rendered || "No Title", 80);
+						var bg_title = truncateStr(data[i].title.rendered || "No Title", 70);
 						var bg_image = data[i]?.jetpack_featured_media_url || "";
 						var bg_url = data[i]?.guid?.rendered || "#";
 						var bg_date = new Date(Date.parse(data[i]?.date || 0));

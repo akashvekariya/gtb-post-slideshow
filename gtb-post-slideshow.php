@@ -18,15 +18,6 @@ function gtbps_register_block_assets() {
 		['wp-blocks', 'wp-editor'],
 		true
 	);
-
-	$style_path = 'admin/slideshow.css';
-
-	wp_enqueue_style(
-		'gtb-post-slideshow-style',
-		plugin_dir_url(__FILE__) . $style_path,
-		[],
-		true
-	);
 }
 
 // Hook the admin scripts for the block editor 
